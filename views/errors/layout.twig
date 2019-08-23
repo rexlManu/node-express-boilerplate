@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		{% block meta %}{% endblock %}
+
+		<title>{% block title %}Error{% endblock %}</title>
+
+		{% block style %}
+		<style type="text/css">
+			body {
+				margin: 20px;
+				font-family: helvetica, sans-serif;
+			}
+
+			h1 {
+				font-size: 28px;
+			}
+
+			a {
+				text-decoration: none;
+				color: #0000ee;
+			}
+		</style>
+		{% endblock %}
+	</head>
+	
+	<body>
+		{% block content %}{% endblock %}
+		<hr>
+		<p>Node.JS Express Boilerplate v{{ version }} by <a href="https://github.com/UnlimitedBytes">UnlimitedBytes</a></p>
+
+		{% block javascript %}{% endblock %}
+	</body>
+</html>
